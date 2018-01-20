@@ -685,11 +685,30 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Eco" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="525C4880-777D-4E9D-A215-7831983E2760" allowsUserCustomization="NO" displayMode="iconAndLabel" sizeMode="small" id="AzB-Af-s86">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="V3R-MQ-eNW"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="E4V-uj-6Hj"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="v4U-LR-Pam"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="QjD-5R-36f"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ZEa-x3-Qc6"/>
+                                <toolbarItem implicitItemIdentifier="A59B9DC4-F057-4E65-8B05-44B436AA7AED" label="Add" paletteLabel="Add" tag="-1" image="AddButton" id="AeW-TI-SSL"/>
+                                <toolbarItem implicitItemIdentifier="E679E120-BD7A-4F64-99D5-E872B48BC19A" label="Remove" paletteLabel="Remove" tag="-1" image="RemoveButton" id="Yt9-xN-C8P"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="ZEa-x3-Qc6"/>
+                                <toolbarItem reference="AeW-TI-SSL"/>
+                                <toolbarItem reference="Yt9-xN-C8P"/>
+                            </defaultToolbarItems>
+                            <connections>
+                                <outlet property="delegate" destination="IQv-IB-iLA" id="7Jp-Dz-KEq"/>
+                            </connections>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -723,7 +742,7 @@
                                                     <rect key="frame" x="1" y="0.0" width="478" height="244"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Jdc-cJ-Wok" viewBased="YES" id="2AU-vm-Cnl">
+                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Jdc-cJ-Wok" viewBased="YES" id="2AU-vm-Cnl">
                                                             <rect key="frame" x="0.0" y="0.0" width="478" height="221"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -962,6 +981,9 @@
                                                                     </prototypeCellViews>
                                                                 </tableColumn>
                                                             </tableColumns>
+                                                            <connections>
+                                                                <binding destination="ECj-5Q-oYq" name="content" keyPath="arrangedObjects" id="IxP-Uk-ZNj"/>
+                                                            </connections>
                                                         </tableView>
                                                     </subviews>
                                                 </clipView>
@@ -1017,8 +1039,13 @@
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController mode="entity" entityName="VoiceCommand" automaticallyPreparesContent="YES" id="ECj-5Q-oYq"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AddButton" width="38" height="38"/>
+        <image name="RemoveButton" width="38" height="38"/>
+    </resources>
 </document>
