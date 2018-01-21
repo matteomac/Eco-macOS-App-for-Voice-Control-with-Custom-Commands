@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4505C4362014140A00B98631 /* VoiceCommand+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505C4342014140A00B98631 /* VoiceCommand+CoreDataClass.swift */; };
+		4505C4372014140A00B98631 /* VoiceCommand+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505C4352014140A00B98631 /* VoiceCommand+CoreDataProperties.swift */; };
+		45DB2DDE2013F24E00EA3200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB2DDD2013F24E00EA3200 /* AppDelegate.swift */; };
+		45DB2DE02013F24E00EA3200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB2DDF2013F24E00EA3200 /* ViewController.swift */; };
+		45DB2DE32013F24E00EA3200 /* Eco.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45DB2DE12013F24E00EA3200 /* Eco.xcdatamodeld */; };
+		45DB2DE52013F24E00EA3200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DB2DE42013F24E00EA3200 /* Assets.xcassets */; };
+		45DB2DE82013F24E00EA3200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DB2DE62013F24E00EA3200 /* Main.storyboard */; };
+		45DB2DF42013F24F00EA3200 /* EcoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB2DF32013F24F00EA3200 /* EcoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45DB2DF02013F24F00EA3200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45DB2DD22013F24E00EA3200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45DB2DD92013F24E00EA3200;
+			remoteInfo = Eco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4505C4342014140A00B98631 /* VoiceCommand+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceCommand+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4505C4352014140A00B98631 /* VoiceCommand+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceCommand+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		45DB2DDA2013F24E00EA3200 /* Eco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45DB2DDD2013F24E00EA3200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45DB2DDF2013F24E00EA3200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45DB2DE22013F24E00EA3200 /* Eco.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eco.xcdatamodel; sourceTree = "<group>"; };
+		45DB2DE42013F24E00EA3200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45DB2DE72013F24E00EA3200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45DB2DE92013F24E00EA3200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45DB2DEA2013F24E00EA3200 /* Eco.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Eco.entitlements; sourceTree = "<group>"; };
+		45DB2DEF2013F24F00EA3200 /* EcoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45DB2DF32013F24F00EA3200 /* EcoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoTests.swift; sourceTree = "<group>"; };
+		45DB2DF52013F24F00EA3200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45DB2DD72013F24E00EA3200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45DB2DEC2013F24F00EA3200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45DB2DD12013F24E00EA3200 = {
+			isa = PBXGroup;
+			children = (
+				4505C4342014140A00B98631 /* VoiceCommand+CoreDataClass.swift */,
+				4505C4352014140A00B98631 /* VoiceCommand+CoreDataProperties.swift */,
+				45DB2DDC2013F24E00EA3200 /* Eco */,
+				45DB2DF22013F24F00EA3200 /* EcoTests */,
+				45DB2DDB2013F24E00EA3200 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45DB2DDB2013F24E00EA3200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45DB2DDA2013F24E00EA3200 /* Eco.app */,
+				45DB2DEF2013F24F00EA3200 /* EcoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45DB2DDC2013F24E00EA3200 /* Eco */ = {
+			isa = PBXGroup;
+			children = (
+				45DB2DDD2013F24E00EA3200 /* AppDelegate.swift */,
+				45DB2DDF2013F24E00EA3200 /* ViewController.swift */,
+				45DB2DE42013F24E00EA3200 /* Assets.xcassets */,
+				45DB2DE62013F24E00EA3200 /* Main.storyboard */,
+				45DB2DE92013F24E00EA3200 /* Info.plist */,
+				45DB2DEA2013F24E00EA3200 /* Eco.entitlements */,
+				45DB2DE12013F24E00EA3200 /* Eco.xcdatamodeld */,
+			);
+			path = Eco;
+			sourceTree = "<group>";
+		};
+		45DB2DF22013F24F00EA3200 /* EcoTests */ = {
+			isa = PBXGroup;
+			children = (
+				45DB2DF32013F24F00EA3200 /* EcoTests.swift */,
+				45DB2DF52013F24F00EA3200 /* Info.plist */,
+			);
+			path = EcoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45DB2DD92013F24E00EA3200 /* Eco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45DB2DF82013F24F00EA3200 /* Build configuration list for PBXNativeTarget "Eco" */;
+			buildPhases = (
+				45DB2DD62013F24E00EA3200 /* Sources */,
+				45DB2DD72013F24E00EA3200 /* Frameworks */,
+				45DB2DD82013F24E00EA3200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eco;
+			productName = Eco;
+			productReference = 45DB2DDA2013F24E00EA3200 /* Eco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45DB2DEE2013F24F00EA3200 /* EcoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45DB2DFB2013F24F00EA3200 /* Build configuration list for PBXNativeTarget "EcoTests" */;
+			buildPhases = (
+				45DB2DEB2013F24F00EA3200 /* Sources */,
+				45DB2DEC2013F24F00EA3200 /* Frameworks */,
+				45DB2DED2013F24F00EA3200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45DB2DF12013F24F00EA3200 /* PBXTargetDependency */,
+			);
+			name = EcoTests;
+			productName = EcoTests;
+			productReference = 45DB2DEF2013F24F00EA3200 /* EcoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45DB2DD22013F24E00EA3200 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "matteo barni";
+				TargetAttributes = {
+					45DB2DD92013F24E00EA3200 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					45DB2DEE2013F24F00EA3200 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45DB2DD92013F24E00EA3200;
+					};
+				};
+			};
+			buildConfigurationList = 45DB2DD52013F24E00EA3200 /* Build configuration list for PBXProject "Eco" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45DB2DD12013F24E00EA3200;
+			productRefGroup = 45DB2DDB2013F24E00EA3200 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45DB2DD92013F24E00EA3200 /* Eco */,
+				45DB2DEE2013F24F00EA3200 /* EcoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45DB2DD82013F24E00EA3200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45DB2DE52013F24E00EA3200 /* Assets.xcassets in Resources */,
+				45DB2DE82013F24E00EA3200 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45DB2DED2013F24F00EA3200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45DB2DD62013F24E00EA3200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4505C4372014140A00B98631 /* VoiceCommand+CoreDataProperties.swift in Sources */,
+				4505C4362014140A00B98631 /* VoiceCommand+CoreDataClass.swift in Sources */,
+				45DB2DE02013F24E00EA3200 /* ViewController.swift in Sources */,
+				45DB2DE32013F24E00EA3200 /* Eco.xcdatamodeld in Sources */,
+				45DB2DDE2013F24E00EA3200 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45DB2DEB2013F24F00EA3200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45DB2DF42013F24F00EA3200 /* EcoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45DB2DF12013F24F00EA3200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45DB2DD92013F24E00EA3200 /* Eco */;
+			targetProxy = 45DB2DF02013F24F00EA3200 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45DB2DE62013F24E00EA3200 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45DB2DE72013F24E00EA3200 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45DB2DF62013F24F00EA3200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45DB2DF72013F24F00EA3200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		45DB2DF92013F24F00EA3200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Eco/Eco.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQZ6RQML54;
+				INFOPLIST_FILE = Eco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = matteobarni.Eco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		45DB2DFA2013F24F00EA3200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Eco/Eco.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQZ6RQML54;
+				INFOPLIST_FILE = Eco/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = matteobarni.Eco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		45DB2DFC2013F24F00EA3200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQZ6RQML54;
+				INFOPLIST_FILE = EcoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = matteobarni.EcoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eco.app/Contents/MacOS/Eco";
+			};
+			name = Debug;
+		};
+		45DB2DFD2013F24F00EA3200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XQZ6RQML54;
+				INFOPLIST_FILE = EcoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = matteobarni.EcoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eco.app/Contents/MacOS/Eco";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45DB2DD52013F24E00EA3200 /* Build configuration list for PBXProject "Eco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45DB2DF62013F24F00EA3200 /* Debug */,
+				45DB2DF72013F24F00EA3200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45DB2DF82013F24F00EA3200 /* Build configuration list for PBXNativeTarget "Eco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45DB2DF92013F24F00EA3200 /* Debug */,
+				45DB2DFA2013F24F00EA3200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45DB2DFB2013F24F00EA3200 /* Build configuration list for PBXNativeTarget "EcoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45DB2DFC2013F24F00EA3200 /* Debug */,
+				45DB2DFD2013F24F00EA3200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45DB2DE12013F24E00EA3200 /* Eco.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45DB2DE22013F24E00EA3200 /* Eco.xcdatamodel */,
+			);
+			currentVersion = 45DB2DE22013F24E00EA3200 /* Eco.xcdatamodel */;
+			path = Eco.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45DB2DD22013F24E00EA3200 /* Project object */;
+}
