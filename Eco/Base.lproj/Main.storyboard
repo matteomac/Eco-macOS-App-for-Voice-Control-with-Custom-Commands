@@ -742,7 +742,7 @@
                                                     <rect key="frame" x="1" y="0.0" width="478" height="244"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Jdc-cJ-Wok" viewBased="YES" id="2AU-vm-Cnl">
+                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" autosaveColumns="NO" headerView="Jdc-cJ-Wok" id="2AU-vm-Cnl">
                                                             <rect key="frame" x="0.0" y="0.0" width="478" height="221"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -761,33 +761,9 @@
                                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                    <prototypeCellViews>
-                                                                        <tableCellView id="TWa-NT-9Kf">
-                                                                            <rect key="frame" x="1" y="1" width="120" height="17"/>
-                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                            <subviews>
-                                                                                <textField identifier="CommandCellID" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azX-bl-8Jd">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="17"/>
-                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="kNQ-dp-9Ng">
-                                                                                        <font key="font" metaFont="system"/>
-                                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                                    </textFieldCell>
-                                                                                    <connections>
-                                                                                        <binding destination="TWa-NT-9Kf" name="value" keyPath="objectValue.call" id="bfZ-rR-wEg">
-                                                                                            <dictionary key="options">
-                                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
-                                                                                            </dictionary>
-                                                                                        </binding>
-                                                                                    </connections>
-                                                                                </textField>
-                                                                            </subviews>
-                                                                            <connections>
-                                                                                <outlet property="textField" destination="azX-bl-8Jd" id="SfW-cz-n6w"/>
-                                                                            </connections>
-                                                                        </tableCellView>
-                                                                    </prototypeCellViews>
+                                                                    <connections>
+                                                                        <binding destination="ECj-5Q-oYq" name="value" keyPath="arrangedObjects.call" id="AdO-pt-8Q6"/>
+                                                                    </connections>
                                                                 </tableColumn>
                                                                 <tableColumn identifier="" width="40" minWidth="40" maxWidth="1000" id="bMW-mA-jKK" userLabel="Key">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Key">
@@ -801,33 +777,9 @@
                                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                    <prototypeCellViews>
-                                                                        <tableCellView id="B17-OG-Ygg">
-                                                                            <rect key="frame" x="124" y="1" width="40" height="17"/>
-                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                            <subviews>
-                                                                                <textField identifier="KeyCellID" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCF-YJ-4Xo">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="17"/>
-                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="xQS-0z-fbn">
-                                                                                        <font key="font" metaFont="system"/>
-                                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                                    </textFieldCell>
-                                                                                    <connections>
-                                                                                        <binding destination="B17-OG-Ygg" name="value" keyPath="objectValue.key" id="6Lk-HD-xD3">
-                                                                                            <dictionary key="options">
-                                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
-                                                                                            </dictionary>
-                                                                                        </binding>
-                                                                                    </connections>
-                                                                                </textField>
-                                                                            </subviews>
-                                                                            <connections>
-                                                                                <outlet property="textField" destination="XCF-YJ-4Xo" id="lh4-pf-ip9"/>
-                                                                            </connections>
-                                                                        </tableCellView>
-                                                                    </prototypeCellViews>
+                                                                    <connections>
+                                                                        <binding destination="ECj-5Q-oYq" name="value" keyPath="arrangedObjects.key" id="nIP-IQ-Hbk"/>
+                                                                    </connections>
                                                                 </tableColumn>
                                                                 <tableColumn identifier="" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="1Bz-NO-O4M" userLabel="Shift">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Shift">
@@ -835,39 +787,18 @@
                                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </tableHeaderCell>
-                                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="95Y-NM-cAA">
+                                                                    <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gtg-6n-CJF">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                         <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
+                                                                    </buttonCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                    <prototypeCellViews>
-                                                                        <tableCellView id="dNe-dP-cnK">
-                                                                            <rect key="frame" x="167" y="1" width="30" height="17"/>
-                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                            <subviews>
-                                                                                <textField identifier="ShiftCellID" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Td0-HV-PGe">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
-                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="2rK-gf-Mlf">
-                                                                                        <font key="font" metaFont="system"/>
-                                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                                    </textFieldCell>
-                                                                                    <connections>
-                                                                                        <binding destination="dNe-dP-cnK" name="value" keyPath="objectValue.shift" id="2Es-pO-GfZ">
-                                                                                            <dictionary key="options">
-                                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
-                                                                                            </dictionary>
-                                                                                        </binding>
-                                                                                    </connections>
-                                                                                </textField>
-                                                                            </subviews>
-                                                                            <connections>
-                                                                                <outlet property="textField" destination="Td0-HV-PGe" id="hxx-QL-zru"/>
-                                                                            </connections>
-                                                                        </tableCellView>
-                                                                    </prototypeCellViews>
+                                                                    <connections>
+                                                                        <binding destination="ECj-5Q-oYq" name="value" keyPath="arrangedObjects.shift" id="Xd8-Ix-ta3">
+                                                                            <dictionary key="options">
+                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                                            </dictionary>
+                                                                        </binding>
+                                                                    </connections>
                                                                 </tableColumn>
                                                                 <tableColumn identifier="" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="Xbl-lX-lf6" userLabel="Ctrl">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Ctrl">
@@ -875,32 +806,18 @@
                                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </tableHeaderCell>
-                                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="MhP-DR-hlT">
+                                                                    <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="8tD-1a-cTI">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                         <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
+                                                                    </buttonCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                    <prototypeCellViews>
-                                                                        <tableCellView id="B20-5y-iY6">
-                                                                            <rect key="frame" x="200" y="1" width="30" height="17"/>
-                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                            <subviews>
-                                                                                <textField identifier="CtrlCellID" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7sT-n1-nWW">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
-                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="VBX-zP-h3A">
-                                                                                        <font key="font" metaFont="system"/>
-                                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                                    </textFieldCell>
-                                                                                </textField>
-                                                                            </subviews>
-                                                                            <connections>
-                                                                                <outlet property="textField" destination="7sT-n1-nWW" id="JiE-Cl-aCB"/>
-                                                                            </connections>
-                                                                        </tableCellView>
-                                                                    </prototypeCellViews>
+                                                                    <connections>
+                                                                        <binding destination="ECj-5Q-oYq" name="value" keyPath="arrangedObjects.ctrl" id="dqy-9k-Rhp">
+                                                                            <dictionary key="options">
+                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                                            </dictionary>
+                                                                        </binding>
+                                                                    </connections>
                                                                 </tableColumn>
                                                                 <tableColumn identifier="" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="V8r-vc-GXe" userLabel="Alt">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Alt">
@@ -908,32 +825,18 @@
                                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </tableHeaderCell>
-                                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="JmI-RH-x6u">
+                                                                    <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="giO-eN-LBh">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                         <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
+                                                                    </buttonCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                    <prototypeCellViews>
-                                                                        <tableCellView id="fq7-XF-1kx">
-                                                                            <rect key="frame" x="233" y="1" width="30" height="17"/>
-                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                            <subviews>
-                                                                                <textField identifier="AltCellID" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bo-rQ-KND">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
-                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="C1P-Lf-YNr">
-                                                                                        <font key="font" metaFont="system"/>
-                                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                                    </textFieldCell>
-                                                                                </textField>
-                                                                            </subviews>
-                                                                            <connections>
-                                                                                <outlet property="textField" destination="5bo-rQ-KND" id="i5c-7F-Zx8"/>
-                                                                            </connections>
-                                                                        </tableCellView>
-                                                                    </prototypeCellViews>
+                                                                    <connections>
+                                                                        <binding destination="ECj-5Q-oYq" name="value" keyPath="arrangedObjects.alt" id="0Pz-CR-hlr">
+                                                                            <dictionary key="options">
+                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                                            </dictionary>
+                                                                        </binding>
+                                                                    </connections>
                                                                 </tableColumn>
                                                                 <tableColumn identifier="" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="1RG-m9-4Hr" userLabel="Cmd">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Cmd">
@@ -941,39 +844,18 @@
                                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </tableHeaderCell>
-                                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="jjf-9m-Jwd">
+                                                                    <buttonCell key="dataCell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Oth-WH-UpK">
+                                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                         <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
+                                                                    </buttonCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                    <prototypeCellViews>
-                                                                        <tableCellView id="xxg-WL-Skz">
-                                                                            <rect key="frame" x="266" y="1" width="30" height="17"/>
-                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                            <subviews>
-                                                                                <textField identifier="CmdCellID" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-8B-7fe">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
-                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="PfL-7t-pBC">
-                                                                                        <font key="font" metaFont="system"/>
-                                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                                    </textFieldCell>
-                                                                                    <connections>
-                                                                                        <binding destination="xxg-WL-Skz" name="value" keyPath="objectValue.cmd" id="MCs-Hl-DSX">
-                                                                                            <dictionary key="options">
-                                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
-                                                                                            </dictionary>
-                                                                                        </binding>
-                                                                                    </connections>
-                                                                                </textField>
-                                                                            </subviews>
-                                                                            <connections>
-                                                                                <outlet property="textField" destination="dn5-8B-7fe" id="6Eu-yt-2tw"/>
-                                                                            </connections>
-                                                                        </tableCellView>
-                                                                    </prototypeCellViews>
+                                                                    <connections>
+                                                                        <binding destination="ECj-5Q-oYq" name="value" keyPath="arrangedObjects.cmd" id="lD3-SL-AeS">
+                                                                            <dictionary key="options">
+                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                                            </dictionary>
+                                                                        </binding>
+                                                                    </connections>
                                                                 </tableColumn>
                                                                 <tableColumn identifier="" width="120" minWidth="10" maxWidth="3.4028234663852886e+38" id="ghj-0j-jYo" userLabel="Eco">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Eco">
@@ -987,33 +869,9 @@
                                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                    <prototypeCellViews>
-                                                                        <tableCellView id="fxX-5I-Sny">
-                                                                            <rect key="frame" x="299" y="1" width="120" height="17"/>
-                                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                            <subviews>
-                                                                                <textField identifier="EcoCellID" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCU-sR-Xri">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="17"/>
-                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="X0N-GJ-J1T">
-                                                                                        <font key="font" metaFont="system"/>
-                                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                                    </textFieldCell>
-                                                                                    <connections>
-                                                                                        <binding destination="fxX-5I-Sny" name="value" keyPath="objectValue.answer" id="5TT-4A-dJz">
-                                                                                            <dictionary key="options">
-                                                                                                <bool key="NSConditionallySetsEditable" value="YES"/>
-                                                                                            </dictionary>
-                                                                                        </binding>
-                                                                                    </connections>
-                                                                                </textField>
-                                                                            </subviews>
-                                                                            <connections>
-                                                                                <outlet property="textField" destination="FCU-sR-Xri" id="VpO-Kk-ncX"/>
-                                                                            </connections>
-                                                                        </tableCellView>
-                                                                    </prototypeCellViews>
+                                                                    <connections>
+                                                                        <binding destination="ECj-5Q-oYq" name="value" keyPath="arrangedObjects.answer" id="Kow-4I-lbU"/>
+                                                                    </connections>
                                                                 </tableColumn>
                                                             </tableColumns>
                                                             <connections>
@@ -1035,7 +893,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableHeaderView>
                                             </scrollView>
-                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFU-p7-ama">
+                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFU-p7-ama" userLabel="Add">
                                                 <rect key="frame" x="339" y="-13" width="48" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="AddButton" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="X0x-ob-kq5">
@@ -1046,7 +904,7 @@
                                                     <action selector="add:" target="ECj-5Q-oYq" id="y85-ci-toC"/>
                                                 </connections>
                                             </button>
-                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GK-OM-OyH">
+                                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GK-OM-OyH" userLabel="Delet">
                                                 <rect key="frame" x="397" y="-13" width="48" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="RemoveButton" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uIY-ZF-xTj">
@@ -1054,7 +912,7 @@
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
                                                 <connections>
-                                                    <action selector="remove:" target="ECj-5Q-oYq" id="ZX8-HH-imb"/>
+                                                    <action selector="remove:" target="ECj-5Q-oYq" id="2DJ-I8-v42"/>
                                                 </connections>
                                             </button>
                                         </subviews>
