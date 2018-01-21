@@ -726,17 +726,17 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Eco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="278"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="307"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNp-LM-Kp8">
-                                <rect key="frame" x="0.0" y="8" width="480" height="270"/>
+                                <rect key="frame" x="0.0" y="8" width="480" height="299"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="QBx-cz-i79" userLabel="Container">
-                                        <rect key="frame" x="0.0" y="25" width="480" height="245"/>
+                                        <rect key="frame" x="0.0" y="25" width="480" height="274"/>
                                         <subviews>
                                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shX-aa-uvc">
-                                                <rect key="frame" x="0.0" y="0.0" width="480" height="245"/>
+                                                <rect key="frame" x="0.0" y="29" width="480" height="245"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <clipView key="contentView" ambiguous="YES" id="3lb-j6-0bk">
                                                     <rect key="frame" x="1" y="0.0" width="478" height="244"/>
@@ -774,6 +774,9 @@
                                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                                     </textFieldCell>
+                                                                                    <connections>
+                                                                                        <binding destination="TWa-NT-9Kf" name="value" keyPath="objectValue.call" id="2Dt-Y7-Qmk"/>
+                                                                                    </connections>
                                                                                 </textField>
                                                                             </subviews>
                                                                             <connections>
@@ -807,6 +810,9 @@
                                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                                     </textFieldCell>
+                                                                                    <connections>
+                                                                                        <binding destination="B17-OG-Ygg" name="value" keyPath="objectValue.key" id="Np9-bn-PqL"/>
+                                                                                    </connections>
                                                                                 </textField>
                                                                             </subviews>
                                                                             <connections>
@@ -840,6 +846,9 @@
                                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                                     </textFieldCell>
+                                                                                    <connections>
+                                                                                        <binding destination="dNe-dP-cnK" name="value" keyPath="objectValue.shift" id="hzJ-ff-4Vw"/>
+                                                                                    </connections>
                                                                                 </textField>
                                                                             </subviews>
                                                                             <connections>
@@ -939,6 +948,9 @@
                                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                                     </textFieldCell>
+                                                                                    <connections>
+                                                                                        <binding destination="xxg-WL-Skz" name="value" keyPath="objectValue.cmd" id="Zgj-TE-PaQ"/>
+                                                                                    </connections>
                                                                                 </textField>
                                                                             </subviews>
                                                                             <connections>
@@ -972,6 +984,9 @@
                                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                                     </textFieldCell>
+                                                                                    <connections>
+                                                                                        <binding destination="fxX-5I-Sny" name="value" keyPath="objectValue.answer" id="dy3-8T-iVs"/>
+                                                                                    </connections>
                                                                                 </textField>
                                                                             </subviews>
                                                                             <connections>
@@ -988,7 +1003,7 @@
                                                     </subviews>
                                                 </clipView>
                                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="4b9-ym-i6d">
-                                                    <rect key="frame" x="1" y="228" width="478" height="16"/>
+                                                    <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </scroller>
                                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="IMN-T9-slh">
@@ -1002,6 +1017,16 @@
                                             </scrollView>
                                         </subviews>
                                     </customView>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-TT-hNK">
+                                        <rect key="frame" x="-6" y="18" width="68" height="32"/>
+                                        <buttonCell key="cell" type="push" title="ADD" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IiD-b5-KEq">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <action selector="add:" target="ECj-5Q-oYq" id="jvD-Ra-95k"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Cp-28-778" userLabel="Status">
                                         <rect key="frame" x="-2" y="0.0" width="484" height="17"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="HP7-x8-cXG">
@@ -1023,8 +1048,10 @@
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
+                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
@@ -1039,7 +1066,11 @@
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <arrayController mode="entity" entityName="VoiceCommand" automaticallyPreparesContent="YES" id="ECj-5Q-oYq"/>
+                <arrayController mode="entity" entityName="VoiceCommand" automaticallyPreparesContent="YES" id="ECj-5Q-oYq">
+                    <connections>
+                        <binding destination="XfG-lQ-9wD" name="managedObjectContext" keyPath="self.managedObjectContext" id="lfP-Fh-IA3"/>
+                    </connections>
+                </arrayController>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>

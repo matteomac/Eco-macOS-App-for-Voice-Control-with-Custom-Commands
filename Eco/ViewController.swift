@@ -21,7 +21,12 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
+    @objc let managedObjectContext: NSManagedObjectContext
+    
+    required init?(coder: NSCoder) {
+        self.managedObjectContext = (NSApp.delegate as! AppDelegate).persistentContainer.viewContext
+        super.init(coder: coder)
+    }
 
 }
 
