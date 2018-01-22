@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C205" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="VoiceCommand" representedClassName="VoiceCommand" syncable="YES">
+    <entity name="VoiceCommand" representedClassName=".VoiceCommand" syncable="YES">
         <attribute name="alt" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="answer" optional="YES" attributeType="String" defaultValueString="Done" syncable="YES"/>
         <attribute name="call" optional="YES" attributeType="String" defaultValueString="Eco" syncable="YES"/>

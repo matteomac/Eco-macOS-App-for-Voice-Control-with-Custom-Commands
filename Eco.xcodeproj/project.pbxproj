@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4505C4362014140A00B98631 /* VoiceCommand+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505C4342014140A00B98631 /* VoiceCommand+CoreDataClass.swift */; };
 		4505C4372014140A00B98631 /* VoiceCommand+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4505C4352014140A00B98631 /* VoiceCommand+CoreDataProperties.swift */; };
+		4558D2592014FD3A008446F7 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558D2582014FD3A008446F7 /* Voice.swift */; };
 		45DB2DDE2013F24E00EA3200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB2DDD2013F24E00EA3200 /* AppDelegate.swift */; };
 		45DB2DE02013F24E00EA3200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB2DDF2013F24E00EA3200 /* ViewController.swift */; };
 		45DB2DE32013F24E00EA3200 /* Eco.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45DB2DE12013F24E00EA3200 /* Eco.xcdatamodeld */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		4505C4342014140A00B98631 /* VoiceCommand+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceCommand+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4505C4352014140A00B98631 /* VoiceCommand+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoiceCommand+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4558D2582014FD3A008446F7 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
 		45DB2DDA2013F24E00EA3200 /* Eco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DB2DDD2013F24E00EA3200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DB2DDF2013F24E00EA3200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				45DB2DDD2013F24E00EA3200 /* AppDelegate.swift */,
 				45DB2DDF2013F24E00EA3200 /* ViewController.swift */,
+				4558D2582014FD3A008446F7 /* Voice.swift */,
 				45DB2DE42013F24E00EA3200 /* Assets.xcassets */,
 				45DB2DE62013F24E00EA3200 /* Main.storyboard */,
 				45DB2DE92013F24E00EA3200 /* Info.plist */,
@@ -210,6 +213,7 @@
 				4505C4362014140A00B98631 /* VoiceCommand+CoreDataClass.swift in Sources */,
 				45DB2DE02013F24E00EA3200 /* ViewController.swift in Sources */,
 				45DB2DE32013F24E00EA3200 /* Eco.xcdatamodeld in Sources */,
+				4558D2592014FD3A008446F7 /* Voice.swift in Sources */,
 				45DB2DDE2013F24E00EA3200 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,14 +7,47 @@
 //
 
 import Cocoa
-
 class ViewController: NSViewController {
 
-    override func viewDidLoad() {
+    
+//    var prova = VoiceController(coder: coder)
+//    var commandList: [String] = [""]
+    @IBAction func CHECKCALL(_ sender: Any) {
+        
+        var request: NSFetchRequest<VoiceCommand> = VoiceCommand.fetchRequest()
+        var request2: NSFetchRequest<VoiceCommand> = NSFetchRequest(entityName: "VoiceCommand")
+        func grabCommand() {
+            
+            request2.returnsObjectsAsFaults = false
+            do {
+                print("ciao")
+                var result : NSArray = try! managedObjectContext.fetch(request2) as NSArray
+                var list: [VoiceCommand]
+                for res in result {
+//                    commandList.append(VoiceCommand.value(forKey: "call") as! String)
+                    print(res)
+//                    list.append(<#T##newElement: VoiceCommand##VoiceCommand#>)
+                }
+//                print("this is \(commandList)")
+            }
+            
+    }
+        grabCommand()
+    }
+    
+    @IBOutlet var listController: NSArrayController!
+    
+    let fetchCalls = NSFetchRequest<NSManagedObject>(entityName: "VocalCommand")
+    
+    
+    override func viewDidLoad() { 
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override var representedObject: Any? {
         didSet {

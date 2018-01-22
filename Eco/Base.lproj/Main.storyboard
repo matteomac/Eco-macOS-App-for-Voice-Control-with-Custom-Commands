@@ -719,7 +719,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="-33" y="304"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -741,7 +741,7 @@
                                                     <rect key="frame" x="1" y="0.0" width="516" height="148"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" autosaveColumns="NO" headerView="Jdc-cJ-Wok" id="2AU-vm-Cnl">
+                                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveColumns="NO" headerView="Jdc-cJ-Wok" id="2AU-vm-Cnl">
                                                             <rect key="frame" x="0.0" y="0.0" width="516" height="125"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -924,8 +924,11 @@
                                                     <action selector="add:" target="ECj-5Q-oYq" id="y85-ci-toC"/>
                                                 </connections>
                                             </button>
-                                            <button ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GK-OM-OyH" userLabel="Delet">
-                                                <rect key="frame" x="54" y="0.0" width="25" height="25"/>
+                                            <button translatesAutoresizingMaskIntoConstraints="NO" id="7GK-OM-OyH" userLabel="Delet">
+                                                <rect key="frame" x="52" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="FA4-ik-Nfk"/>
+                                                </constraints>
                                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="RemoveButton" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uIY-ZF-xTj">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
@@ -942,6 +945,17 @@
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
+                                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSo-g3-wrs">
+                                                <rect key="frame" x="331" y="-5" width="85" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <buttonCell key="cell" type="push" title="CHECK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rPb-Kz-PGT">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="CHECKCALL:" target="XfG-lQ-9wD" id="Ndh-TB-reK"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="BFU-p7-ama" secondAttribute="bottom" id="3Fc-ta-VPv"/>
@@ -1000,6 +1014,10 @@
                             <constraint firstAttribute="trailing" secondItem="hNp-LM-Kp8" secondAttribute="trailing" id="xSu-LQ-qIU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="arrayController" destination="ECj-5Q-oYq" id="Pcx-8M-6eS"/>
+                        <outlet property="listController" destination="ECj-5Q-oYq" id="rvZ-Ws-ABP"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController mode="entity" entityName="VoiceCommand" automaticallyPreparesContent="YES" id="ECj-5Q-oYq">
@@ -1008,7 +1026,7 @@
                     </connections>
                 </arrayController>
             </objects>
-            <point key="canvasLocation" x="212" y="717"/>
+            <point key="canvasLocation" x="252" y="673"/>
         </scene>
     </scenes>
     <resources>
