@@ -14,7 +14,7 @@ import CoreData
 class VoiceController: NSSpeechRecognizer {
 //    var appDel:AppDelegate = (NSApp.delegate as! AppDelegate)
 //    var content: NSManagedObjectContext = appDel.managedObjectContext
-    
+
     @objc let managedObjectContext: NSManagedObjectContext
     
     required init?(coder: NSCoder) {
@@ -28,7 +28,7 @@ class VoiceController: NSSpeechRecognizer {
     func grabCommand() {
         request.returnsObjectsAsFaults = false
         do {
-            var result : NSArray = try! managedObjectContext.fetch(request) as NSArray
+            let result : NSArray = try! managedObjectContext.fetch(request) as NSArray
             for res in result {
                 print(res)
             }

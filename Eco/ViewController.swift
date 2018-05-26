@@ -12,28 +12,44 @@ class ViewController: NSViewController {
     
 //    var prova = VoiceController(coder: coder)
 //    var commandList: [String] = [""]
+    
+    
+    
+    
     @IBAction func CHECKCALL(_ sender: Any) {
         
-        var request: NSFetchRequest<VoiceCommand> = VoiceCommand.fetchRequest()
-        var request2: NSFetchRequest<VoiceCommand> = NSFetchRequest(entityName: "VoiceCommand")
-        func grabCommand() {
-            
-            request2.returnsObjectsAsFaults = false
-            do {
-                print("ciao")
-                var result : NSArray = try! managedObjectContext.fetch(request2) as NSArray
-                var list: [VoiceCommand]
-                for res in result {
-//                    commandList.append(VoiceCommand.value(forKey: "call") as! String)
-                    print(res)
-//                    list.append(<#T##newElement: VoiceCommand##VoiceCommand#>)
-                }
-//                print("this is \(commandList)")
+//        var request: NSFetchRequest<VoiceCommand> = VoiceCommand.fetchRequest()
+//        var request2: NSFetchRequest<VoiceCommand> = NSFetchRequest(entityName: "VoiceCommand")
+//        func grabCommand() {
+//            let context = VoiceCommand.shared.managedObjectContext
+//            let actual = VoiceCommand.getContext()
+//            let list = VoiceCommand.fetchObject()
+//
+//            for i in list! {
+//                print(i.key!)
             }
             
-    }
-        grabCommand()
-    }
+            
+            
+//            var array: [String] = []
+//            array.append(VoiceCommand.shared.call!)
+//            print(array)
+//            request2.returnsObjectsAsFaults = false
+//            do {
+//                print("ciao")
+//                var result : NSArray = try! managedObjectContext.fetch(request2) as NSArray
+//                var list: [VoiceCommand]
+//                for res in result {
+////                    commandList.append(VoiceCommand.value(forKey: "call") as! String)
+//                    print(res)
+////                    list.append(<#T##newElement: VoiceCommand##VoiceCommand#>)
+//                }
+////                print("this is \(commandList)")
+//            }
+            
+//    }
+//        grabCommand()
+//    }
     
     @IBOutlet var listController: NSArrayController!
     

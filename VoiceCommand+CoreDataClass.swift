@@ -13,7 +13,23 @@ import Cocoa
 
 @objc(VoiceCommand)
 public class VoiceCommand: NSManagedObject {
- 
+    
+    static let shared = VoiceCommand()
+    
+    class func getContext() -> NSManagedObjectContext{
+        let appDelegate = NSApp.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
+    }
+    class func fetchObject() -> [VoiceCommand]? {
+        let context = getContext()
+        var list: [VoiceCommand]? = nil
+        do {
+            list = try context.fetch(VoiceCommand.fetchRequest())
+            return list
+        }catch {
+            return list
+        }
+    }
     
 //    put convenience when init is not obliged
     convenience init() {
